@@ -1,0 +1,292 @@
+:root
+{
+    --white: white;
+    --back_dark: #242329;
+}
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    font-size: 62.5%;
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--back_dark);
+}
+
+nav
+{
+    width: 375px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+nav .menu
+{
+    background-image: url(./assets/Menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 24px;
+    height: 24px;  
+    margin-left: 20px;
+}
+
+nav .menu:hover
+{
+    cursor: pointer;
+}
+
+nav .bell
+{
+    background-image: url(./assets/Bell.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+}
+
+nav .bell:hover
+{
+    cursor: pointer;
+}
+
+main
+{
+    width: 375px;
+    margin: 0 auto;
+    
+}
+
+main .burger-title
+{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    
+}
+
+.burger-title h1
+{
+    margin-bottom: 5px;
+    font-size: 2.4rem;
+    color: var(--white);
+}
+
+.burger-title h2
+{
+    margin-top: 5px;
+    font-size: 1.8rem;
+    color: var(--white);
+}
+
+main .selection-bar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.selection-bar .selection-list
+{
+    display: flex;    
+}
+
+.selection-list li
+{
+    list-style: none;
+    margin-right: 30px;
+}
+
+.selection-list li:hover
+{        
+    list-style: disc;
+    color: orange; 
+    font-weight: bold;    
+}
+
+.selection-list li a
+{
+    font-size: 1.4rem;
+    color: var(--white);
+    text-decoration: none;    
+}
+
+.selection-bar .filter
+{
+    background-image: url(./assets/Filter.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+}
+
+.selection-bar .filter:hover
+{
+    cursor: pointer;
+}
+
+main .burger-grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;    
+    margin: 20px 20px;
+}
+
+.burger-grid .burger-card
+{
+    display: flex;
+    flex-direction: column;   
+    justify-content: space-between; 
+    height: 215px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+
+.burger-card img
+{
+    width: 150px;
+}
+
+.burger-card .burger-name h3
+{
+    width: auto;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 2rem;
+    color: var(--white);    
+}
+
+.burger-card .burger-name p
+{
+    font-size: 1.2rem;
+    font-weight:400;
+    line-height: 2rem;
+    color: var(--white);    
+}
+
+.burger-card .price-add
+{
+    display: flex;
+    justify-content: space-between;    
+}
+
+.price-add p
+{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--white);
+    padding-top: 6px;
+}
+
+.price-add span
+{
+    background-image: url(./assets/Circled_Plus.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 24px;
+    height: 24px;   
+    margin-right: 5px; 
+}
+
+.price-add span:hover
+{
+    cursor: pointer;
+}
+
+main .bottom-bar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 20px;
+    margin-top: 60px;
+    padding: 0 40px;
+}
+
+.bottom-bar .map
+{
+    background-image: url(./assets/map-pin.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 24px;
+    height: 24px;       
+}
+
+.bottom-bar .map:hover
+{
+    cursor: pointer;
+}
+
+
+.bottom-bar .add-to-cart
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, #C69223 50%, #E1D24A 100%);      
+    width: 52px;
+    height: 52px; 
+    border-radius: 50px;       
+}
+
+.bottom-bar .add-to-cart:hover
+{
+    cursor: pointer;     
+    background: #C69223;
+}
+
+.bottom-bar .add-to-cart:active
+{
+    cursor: pointer;     
+    background: rgb(54, 54, 54);
+}
+
+
+.add-to-cart span
+{
+    background-image: url(./assets/Basket.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 26px;
+    height: 26px;     
+}
+
+.bottom-bar .add-to-cart:hover
+{
+    cursor: pointer;
+}
+
+
+.bottom-bar .piggy
+{
+    background-image: url(./assets/Piggy_Bank.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 24px;
+    height: 24px; 
+}
+.bottom-bar .piggy:hover
+{
+    cursor: pointer;
+}
+
+
+

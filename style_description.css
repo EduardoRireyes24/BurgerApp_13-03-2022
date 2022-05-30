@@ -1,0 +1,237 @@
+:root
+{
+    --white: white;
+    --back_dark: #242329;
+}
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    font-size: 62.5%;
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--back_dark);
+}
+
+nav
+{
+    width: 375px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+nav .back
+{
+    background-image: url(./assets/Back.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 24px;
+    height: 24px;  
+    margin-left: 20px;
+}
+
+nav .back:hover
+{
+    cursor: pointer;
+}
+
+nav .more
+{
+    background-image: url(./assets/More.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+}
+
+nav .more:hover
+{
+    cursor: pointer;
+}
+
+main
+{
+    width: 375px;
+    margin: 0 auto;
+}
+
+main .burger-descrition
+{
+    display: flex; 
+    flex-direction: column;      
+    align-items: center;
+    margin: 20px 20px;
+}
+
+.burger-descrition img
+{
+    width: 300px;
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
+
+.burger-descrition .burger-title h1
+{
+    margin-bottom: 10px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.8rem;
+    color: var(--white);    
+}
+
+.burger-descrition .burger-title p
+{
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2rem;
+    color: var(--white);
+}
+
+main .burger_add-price
+{
+    width: 375px;   
+    margin-top: 40px;    
+}
+
+.burger_add-price .add-account
+{
+    display: flex;
+    justify-content: space-between; 
+    padding-left: 20px; 
+    padding-right: 20px;
+}
+
+.add-account .account
+{
+    width: 135px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(53, 53, 58, 0.747);
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.account .plus
+{
+    background-image: url(./assets/Plus.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 32px;
+    height: 32px;    
+}
+
+.account .plus
+{
+    cursor: pointer;
+}
+
+.account p
+{
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2rem;
+    color: var(--white);
+}
+
+.account .minus
+{
+    background-image: url(./assets/Minus.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 32px;
+    height: 32px;    
+}
+
+.account .minus
+{
+    cursor: pointer;
+}
+
+.add-account .price
+{
+    width: 150px;
+    height: 50px;
+}
+
+.price h2
+{
+    margin-bottom: 7px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    color: var(--white);
+}
+
+.price p
+{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.8rem;
+    color: var(--white);
+}
+
+main .btn-add-cart
+{
+    width: 375px;   
+    display: flex;
+    justify-content: center;
+    margin-top: 80px; 
+    margin-bottom: 20px; 
+
+}
+
+.btn-add-cart button
+{
+    width: 305px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 0;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 2rem;
+    color: var(--white);
+    background: linear-gradient(0deg, #C69223 50%, #E1D24A 100%);
+}
+
+.btn-add-cart button:hover
+{
+    cursor: pointer;     
+    background: #C69223;
+    
+}
+
+.btn-add-cart button:active
+{
+    cursor: pointer;     
+    background: rgb(54, 54, 54);
+}
+
+
+.btn-add-cart button span
+{
+    background-image: url(./assets/Basket.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 32px;
+    height: 32px;   
+    margin-right: 10px; 
+}
+
